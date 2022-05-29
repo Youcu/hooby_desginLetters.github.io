@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Design Letter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <style>
+    
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    
+        @font-face {
+
+                font-family: 'NelnaLizzyChae';
+
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/NelnaLizzyChae.woff2') format('woff2');
+
+                font-weight: normal;
+
+                font-style: normal;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    
+        @font-face {
+
+         font-family: 'NelnaLizzyChae';
+
+         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/NelnaLizzyChae.woff2') format('woff2');
+
+         font-weight: normal;
+
+         font-style: normal;
+
+        }
+
+        a {
+            text-decoration : none;
+            color : white;
+            cursor : pointer;
+        }
+
+        a:hover {
+            transition-timing-function: ease;
+            font-size:3.8vw;
+        }
+
+        html {
+            height : auto;
+        }
+
+        body {
+          width : 100vw;
+          height:100vh;
+          text-align:center;
+          background:#333;
+          color:white;
+          font-family: 'Courgette', cursive;
+          font-weight:300;
+          font-size:4vw; /*std*/
+          overflow:hidden;
+          -webkit-backface-visibility: hidden;
+          -webkit-perspective: 1000;
+          -webkit-transform: translate3d(0,0,0);
+          /*border : 1px solid red;*/
+        }
+
+        div {
+          display:inline-block;
+          overflow:hidden;
+          white-space:nowrap;
+          margin-top : 40vh; /*RWD*/
+          /*border : 1px solid red;*/
+        }
+
+        div:first-of-type {    
+                    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+          animation: showup 2s ease forwards, slideup 2s 2.2s ease forwards;
+        }
+
+        div:nth-of-type(2) {
+          width:0px;
+          animation: reveal 1s ease forwards, slideup 2s 2.2s ease forwards;
+        }
+
+        div:nth-of-type(2) span {
+          margin-left:-35vw;
+          animation: slidein 2s ease forwards;
+        }
+
+        @keyframes showup {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        } /*motion 1*/
+
+        @keyframes slidein {
+            0% { margin-left:-800px; }
+            100% { margin-left:0px; }
+        }
+
+        @keyframes reveal {
+            0% {opacity:0;width:0px;}
+            100% {opacity:1;width:35vw;}
+        }
+
+        @keyframes slideup {
+            to{margin-top : 15vh;}
+        }
+
+        .container {
+            position : absolute;
+            top :0;
+            bottom :0;
+            right :0;
+            left :0;
+            width : 100vw;
+            margin:auto;
+            text-align : center;
+            margin-top : 25vh;
+            display : inline-block;
+            /*border : 1px solid blue;*/
+        }
+
+        p{
+            font-family: 'NelnaLizzyChae';
+            font-size:4vw; /*adjust by media query, default : 4vw*/
+            text-align:left;
+            padding-left : 21.5vw; /*vw → always rates are regular*/
+            color : transparent;      
+            /*border : 1px solid white;*/
+            margin : 2vh 0 2vh 0;
+            width : 100vw;
+        }
+        
+        .typing-set{
+            display:inline-block;
+            white-space:nowrap;
+            overflow:hidden;
+            transition : 1.5s;
+            /*border:1px solid yellow;*/
+        }
+        
+        .typing1{
+            width : 19ch;
+            animation : typing 1.5s 4s steps(19) forwards; 
+            /*default : (1.5, 4), speed : (double)char/12, duration : speed + post dur + 0.2 */
+        }
+        
+        .typing2{
+            width : 22ch;
+            animation : typing 1.5s 6.1s steps(22) forwards;
+        }
+        
+        .typing3{
+            width : 18ch;
+            animation : typing 1.5s 6.4s steps(18) forwards;
+        }
+        
+        .typing4{
+            width : 18ch;
+            animation : typing 1.5s 8.2s steps(18) forwards;
+        }
+        
+        .typing5{
+            width : 13ch;
+            animation : typing 0.9s 9.9s steps(13) forwards;
+        }
+        
+        
+        .typing6{
+            width : 13ch;
+            animation : typing 0.9s 11.6s steps(13) forwards;
+        }
+        
+        
+        .typing7{
+            width : 12ch;
+            animation : typing 0.9s 13.3s steps(12) forwards;
+        }
+        
+        
+        .typing8{
+            width : 17ch;
+            animation : typing 1.3s 15.1s steps(17) forwards;
+        }
+        
+        
+        .typing9{
+            width : 21ch;
+            animation : typing 1.5s 16.8s steps(21) forwards;
+        }
+        
+        .typing10{
+            width : 18ch;
+            animation : typing 1.5s 18.5s steps(18) forwards;
+        }
+        
+        .typing11{
+            width : 16ch;
+            animation : typing 1.3s 20.2s steps(16) forwards;
+        }
+        
+        
+        .typing12{
+            width : 9ch;
+            animation : typing 0.7s 21.9s steps(9) forwards;
+        }
+        
+        .typing13{
+            width : 23ch;
+            animation : typing 1.5s 23.6s steps(23) forwards;
+        }
+        
+        .typing14{
+            width : 25ch;
+            animation : typing 1.5s 25.3s steps(25) forwards;
+        }
+        
+        .typing15{
+            width : 26ch;
+            animation : typing 1.5s 27s steps(26) forwards;
+        }
+        
+        
+        .typing16{
+            width : 13ch;
+            animation : typing 0.9s 28.1s steps(13) forwards;
+        }
+        
+        
+        .typing17{
+            width : 17ch;
+            animation : typing 1.3s 29.6s steps(17) forwards;
+        }
+        
+        .typing18{
+            width : 17ch;
+            animation : typing 1.3s 31.1s steps(17) forwards;
+        }
+
+        .typing19{
+            width : 21ch;
+            animation : typing 1.3s 31.1s steps(21) forwards;
+        }
+
+        .typing20{
+            width : 27ch;
+            animation : typing 1.3s 31.1s steps(27) forwards;
+        }
+
+        .typing21{
+            width : 18ch;
+            animation : typing 1.3s 31.1s steps(18) forwards;
+        }
+
+        .typing22{
+            width : 8ch;
+            animation : typing 1.3s 31.1s steps(8) forwards;
+        }
+
+        .typing23{
+            width : 15ch;
+            animation : typing 1.3s 31.1s steps(15) forwards;
+        }
+
+        .typing24{
+            width : 25ch;
+            animation : typing 1.3s 31.1s steps(25) forwards;
+        }
+
+        @keyframes typing{
+            from{
+                width :0; 
+                color : white;
+            }
+            to{
+                color : white;
+            }
+        }
+        
+        @keyframes slideout{
+            0%{margin-left:0;}
+            100%{margin-left:-200px; opacity:0;}
+        }
+
+        /*Media Query for letter's break point*/
+
+        @media screen and (max-width : 480px) {
+           /*Mobile, index 18*/
+           
+        }
+        @media screen and (min-width : 480px) and (max-width : 768px) {
+            /*Tablet, index 12*/
+        }
+
+        @media screen and (min-width : 768px) and (max-width : 1024px) {
+            /*Desktop, resize font-size to 32px Then index 12*/
+        }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div><a href="HappyBirthday.html">Hello, KSB!</a></div> 
+        <div> 
+            <span><a href="HappyBirthday.html">Happy Birthday !</a></span>
+        </div>
+
+        <div class="container">
+            <p><span class="typing1 typing-set">23번째 생일이다. 신기하지 않냐?
+            </span><br>
+            <span class="typing2 typing-set">난 2013년도가 아직도 이렇게 생생한데</span><br>
+            <span class="typing3 typing-set">그게 벌써 9년전이래 ㄷㄷ...</span><br>
+            
+            
+            <span class="typing4 typing-set">생일선물이 너한테 유용할지 아닐지</span><br>
+            <span class="typing5 typing-set">혹은 부담이 될 정도인건지</span>
+            <span class="typing6 typing-set">아니면 부족한 정도인건지</span><br>
+            <span class="typing7 typing-set">정말 고민이 많이 됐다.</span>
+            
+            
+            <span class="typing8 typing-set">너가 나 생일이라고 챙겨준게, </span><br>
+            <span class="typing9 typing-set">원래 니 스타일대로라면 그냥 기프티콘을</span><br> 
+            <span class="typing10 typing-set">보낼 법도 한데, 오랜만에 본다고</span><br>
+            <span class="typing11 typing-set">신경 많이 써서 준게 느껴져서</span>
+            <span class="typing12 typing-set">감동이었음...</span><br>
+            
+            
+            <span class="typing13 typing-set">입대 전 니 생섬 챙긴다고 15,000원을</span><br>
+            <span class="typing14 typing-set">예약전송 했던게 생각나서 이불킥도 많이하고ㅋㅋ</span><br>
+            <span class="typing15 typing-set">아ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 현타온다...ㅋㅋㅋㅋㅋㅋ</span><br>
+            
+            
+            <span class="typing16 typing-set">그래서 내가 생각하는</span>
+            <span class="typing17 typing-set">부담되지도 않고 부족하지도 않는</span><br>
+            <span class="typing18 typing-set">나름대로의 적정선으로 사봤어.</span><br>
+
+            <span class="typing19 typing-set">어제 너가 제일 중요한 편지가 없다해서</span><br>
+            <span class="typing20 typing-set">부랴부랴 만들어서 화면이 잘 나올지는 모르겠지만</span><br>
+            <span class="typing21 typing-set">결국 내가 하고 싶은 말은, </span><br>
+            <span class="typing22 typing-set">생일축하한다. </span>
+            <span class="typing23 typing-set">매일 생일같은 하루 보내라.</span><br>
+
+            <span class="typing24 typing-set">P.S. 케이크도 만들었는데 개뿌듯함 별점남겨</span>
+            
+            </p>
+        </div>
+
+        
+
+    </body>
+</html>
